@@ -1,0 +1,934 @@
+/*margin hataya*/
+
+body{
+	margin: 0px;
+}
+
+/*image laga front wala*/
+#imagefront{
+height: 65vh;
+    opacity: 0.8;
+   
+    
+    background-image: url(c.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    padding-top:1.2rem;    
+}
+
+/*yaha pe dala h */
+/*dropdownwala*/
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+
+
+/*class baani h list ke bullet hatane or padding ke lie*/
+.horizontal-list{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+
+
+
+/*isme list ko block me kia h inline se*/
+
+.horizontal-list li{
+	display: inline-block;
+	margin :0px 10px 10px 0px;
+	font-weight: 100;
+	font-size: 1rem;
+}
+/*ek class jise ki list ya kuch bhi center me aaye */
+.text-center{
+	text-align: center;
+}
+
+/*list ki line blue color hatane ke lie */
+.horizontal-list li a{
+
+	color: white;
+	text-decoration: none;
+	
+	/*color:red;*/
+}
+
+/*for avoid underine path in social mdenu*/
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 1.5s;
+}
+/*hovering*/
+.nav-menu li a:hover{
+	
+	color: darkgrey;
+	border-bottom: 1px solid white;
+
+	/*color:red;*/
+}
+
+
+
+
+
+
+#my-name{
+	color:white;
+	font-size: 3rem;
+	letter-spacing: .5rem;
+	margin-top:17vh;
+	font-weight: 700;
+	margin-bottom: 0.5rem; 
+
+}
+
+.social-icons li a i{
+	padding:11px;
+	font-size: 2rem;
+	border-radius: 50%;
+
+}
+/*color fill nhi ho paya*/
+/*
+.color-fill{
+	transition: color:darkgrey; 0.5s;
+
+}
+*/
+
+.social-icons li a i:hover{
+	color:darkgrey;
+	transition: color 0.5s;
+	box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.2);
+	
+}
+/*here we are making various section useing flex for skills experience and prortfolios etc*/
+section{
+	width :100%;
+	display: flex;
+	/*height: 75vh;*/
+	flex-direction: column;
+	align-items:center;
+}
+
+/*this is a zoto class ise hum har alternate section ko alag color denge alternatively 
+jesa first ka color white to second ka blue fir 3 ka white and so on to iska funcn hai ye*/
+
+
+
+
+section:nth-child(2n){
+	background-color:ghostwhite;
+	/*#9e9b9b29;*/
+}
+section:nth-child(2n+1){
+	background-color:white;
+}
+
+/*heading of section skills etc*/
+.section-heading{
+	width:auto;
+	padding: 20px 10px 10px;
+	/*margin: 10px auto;*/
+	font-weight: 400; 
+}
+
+.section-heading span{
+	font-size: 46px;
+	color:#2857a4;
+	padding-top: 10px;
+	/*margin-top:0.5rem; */
+	display: inline-block;
+}
+
+/*commmon margin class*/
+.mb75px{
+	margin-bottom: 75px;
+}
+
+/*skill section ke andar ki bakaiti*/
+.Skills-display{
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	/*padding:3%; */
+	/*left:20%;*/
+	width:  61%;
+	/*height: 100px;*/
+	/*border:2px solid black;*/
+	 
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+
+	
+}
+
+/*skill progress ke direct child i.ie jo uska andar span h usi ko eeffect karega*/
+.skill-progress>div{  
+	border-radius: 20px 0px 0px 20px;  
+	height: inherit;
+	           /*willl apply only to direct child only*/
+
+}
+.Skills-name span{
+	color:white;
+	font-size:1.2rem;
+	margin-left: 20px;
+
+}
+
+/*skill vagearh ke andar jo aiega uska stylying*/
+.skill-progress{
+	width: 12rem;
+	height: 1.9rem;
+	background-color: lightgrey; 
+	border-radius: 1.8rem;
+	border: 2px solid black;
+	margin:4%;
+	margin-bottom: 10%;
+
+}
+div{
+	display: block;
+}
+.mb-blue{
+	background-color: red;
+
+}
+
+
+
+#About{
+
+	height: auto;
+	text-align: center;
+
+
+	width:100%;
+	position: relative;
+}
+#About p{
+	/*padding: 10px;*/
+    width: 80%;
+    padding-top:25px; 
+    text-align: justify;
+    color: solid black;
+    line-height: 1.6rem;
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+
+
+	/*
+	padding: 9vh;
+
+	margin-right: 10vh;
+    margin-top: -3vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+	margin-left: 10vh;
+	text-align: justify;
+	
+	font-size: 1.1rem;
+	line-height: 1.6rem;
+	font-weight:100;*/
+}
+
+
+
+
+#my-image{
+	height: 12rem;
+	width: 12rem;
+	
+	margin:10px;
+	margin:auto;
+	margin-top: -15vh
+	
+
+}
+
+#my-image img{
+	height:100%;
+	width:100%;
+	border-radius: 50%;
+	margin-right: 10px
+
+	}
+
+#my-image:hover{
+	box-shadow: 1px 5px 6px 4px black;
+	border-radius: 50%;
+	
+
+}
+
+
+/**baki skills ki changing */
+
+/*percent class*/
+.percent-eighty{
+	width: 65%;
+	height: inherit;
+	box-shadow:0px 0px 6px 4px rgba(230,196,196,0.2);
+
+
+}
+.percent-eighty-five{
+	width:85%;
+	
+}
+.mb-orange{
+	background-color: cyan;
+
+}
+
+.percent-ninty{
+	width:90%;
+}
+
+.mb-html{
+	background-color:black;
+}
+.percent-fourty{
+	width:70%;
+
+}
+.mb-python{
+	background-color:purple;
+}
+
+.percent-seventy {
+	width: 50%;
+	/*height: inherit;*/
+
+}
+
+.mb-node{
+	background-color:green;
+
+}
+
+
+.percent-android{
+width:60%;
+} 
+
+.mb-and{
+	background-color:lightblue; 
+}
+
+/*edu*/
+/*education wala*/
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+
+
+/* portfolio ka section*/
+
+
+.port-box{
+	height: inherit;
+	width: 70%;
+	border:2px solid ghostwhite;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 8%;
+}
+
+.port-box div{
+	height: 300px;
+	width: 300px;
+	border : 2px solid wheat;
+	margin-bottom:80px; 
+}
+
+
+#image-one{
+	background-image: url(jio.jpg);
+	background-size: cover;
+}
+
+#image-one:hover{
+	transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#image-2{
+	background-image: url(coding.jpg);
+	/*background-size: cover;*/
+	object-fit: cover;
+	/*background-size:auto;*/
+	background-repeat: round;
+}
+
+
+#image-2:hover{
+	transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and(max-width: 600px){
+	#image-2{
+		background-size:cover;
+
+	}
+
+}
+
+#image-3{
+	background-image: url(ninja.jpg);
+
+	object-fit:contain;
+	background-repeat: round;
+}
+
+#image-3:hover{
+	transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.just{
+	text-align:justify;
+	margin: 10px;
+
+}
+
+.color-diva{
+	background: linear-gradient(120deg, lightblue, skyblue,blue);
+	/*background-image: linear-gradient(top right , lightblue,skyblue, cyan);*/
+}
+.diva{
+
+	text-align: center;
+	font-family: sans-serif;
+	/*font-size:.5rem;*/
+	/*text-align: justify;*/
+	font-weight: 200;
+	word-spacing: .5;
+	overflow-wrap: break-word;
+}
+.call{
+/*	    background-image: linear-gradient(45deg, blue, cyan, transparent);
+*/
+	    background-image: linear-gradient(45deg, blue, cyan );
+	    /*background-color: blue;*/
+
+}
+
+
+
+.sec-con{
+	height: inherit;
+	width: 100%;
+	display: flex;
+	/*border:2px solid blue;*/
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 8%;
+	/*background-image: linear-gradient(right blue, skyblue);*/
+    background-image: linear-gradient(45deg, blue, cyan, transparent);
+
+
+}
+
+.sec-con div{
+	height: inherit;
+	width:40%;
+	/*padding: 5%*/
+	/*border:2px solid black;*/
+	font-size: 2rem;
+
+}
+
+.sec-conn div{
+	height: inherit;
+	width:40%;
+	/*padding: 5%*/
+	/*border:2px solid black;*/
+	font-size: 2rem;
+	color: white;
+}
+
+/*input[type=text] {
+  border: 2px solid wheat;
+  border-radius: 4px;
+  width: 100%;
+  height: initial;
+  background-image: linear-gradient(-45deg, blue, cyan, transparent);
+}
+input[type=text ] {
+  border: none;
+  border-bottom: 2px solid wheat;
+}
+input[type=email] {
+
+	 border: 2px solid wheat;
+  border-radius: 4px;
+  width: 100%;
+  height: initial;
+  background-image: linear-gradient(-45deg, blue, cyan, transparent);
+
+	}
+
+input[type=email ] {
+  border: none;
+  border-bottom: 2px solid wheat;
+}
+
+input[type=textarea]{
+	  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  /*background-image: linear-gradient(-45deg, blue, cyan, transparent);*/
+ /*
+  resize: none;
+  border-bottom: 4px solid black;
+  color:grey;
+  background-color: blue;
+
+}
+input[type=textarea]{
+}*/
+
+.button {
+ 
+	size: 4rem;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: black; /* Green */
+  color: white;
+}
+
+.con{
+	overflow: hidden;
+}
+.con fieldset{
+	margin-left: 70px;
+	width: 100%;
+	border:2px solid wheat;
+	font-family: cursive;
+}
+
+.con span{
+	font-family: fantasy;
+	color:white;
+	font-size: 2rem;
+	font-style: unset;
+	font-weight: 400;
+}
+
+/**Education section*/
+.timeline{
+	width: 75%;
+	margin:10px;
+	
+	/*border:2px solid black;*/
+	position: relative;
+
+}
+
+.timeline-box{
+	/*margin:10px;*/
+	width: 45%;
+	position: relative;
+	min-height: 150px;
+	/*border:2px solid black;*/
+
+}
+
+.timeline-box:nth-child(2n){
+	left:53%;
+}
+
+/*ye dono gole ke lie h line ke upar*/
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	top:47%;
+	border-radius: 100%;
+	width: .5rem;
+	height: .5rem;
+	background-color:black;
+	right: -13%;
+
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	top:54%;
+	border-radius: 50%;
+	width: .5rem;
+	height: .5rem;
+	background-color: black;
+	left :-7%;
+	z-index: 1;
+
+}
+
+.left{
+	text-align: end;
+	font-size: 1.2rem;
+	/*color:blue;*/
+	/*line-height: normal;*/
+	/*margin-right: 10%;*/
+}
+.right{
+	text-align: start;
+	font-size: 1.2rem;
+	/*color: blue;*/
+	/*line-height: normal;*/
+	/*margin-left: 10%;*/
+}
+/*
+.naam:nth-child(2n){
+	margin-left: 69%
+	font:icon;
+	color: blueviolet;
+	font-size: 1.8em;
+    font-family: fantasy;
+    margin-left:46%;
+    text-align: end;
+    z-index: 1;
+
+
+}
+
+.naam:nth-child(2n+1){
+	margin-left: 69%
+	font:icon;
+	color: blueviolet;
+	font-size: 1.8em;
+    font-family: fantasy;
+    margin-left:46%;
+    text-align: right;
+
+
+}
+*/
+
+.timeline-divider{
+	position: absolute;
+	width: 0%;
+	height: 67%;
+	border:3px dashed #0096fa6b;
+	top:14%;
+	left:50%;
+
+}
+.icon{
+	font-size: xx-large;
+	position: sticky;
+	top:68%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+/*making eduaction section responsive*/
+@media screen and (max-width: 600px){
+	.timeline-divider{
+	left:5%;
+
+	}
+	.timeline-box{
+		left:12% !important;
+		width: 80%;
+		margin-bottom: 3%;
+		/*z-index: 2;*/
+	}
+	.timeline-box:nth-child(2n+1)::after{
+		left:-10%;
+
+	}
+	.timeline-box:nth-child(2n)::after{
+		left:-10%;
+
+	}
+}
+
+.call{
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 1.1rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 572px) {
+
+	#image-2{
+	background-image: url(coding.jpg);
+	object-fit: cover;
+	
+	background-repeat: round;
+}
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -6.3% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
